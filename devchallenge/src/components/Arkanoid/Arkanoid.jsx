@@ -14,8 +14,8 @@ const Arkanoid = () => {
     const $sprite = spriteRef.current;
     const $bricks = bricksRef.current;
 
-    canvas.width = canvas.parentElement.clientWidth; // Ajusta el ancho según el contenedor
-    canvas.height = canvas.parentElement.clientHeight; // Ajusta la altura según el contenedor
+    canvas.width = 448; //Ancho
+    canvas.height = 400; //Altura
 
     /* Variables de nuestro juego */
     /* VARIABLES DE LA PELOTA */

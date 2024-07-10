@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<link rel="stylesheet" href="/src/pages/register.css">
+
+<Layout title="GameMind | Registro">
+  <Header />
+  <main class="register-container">
+    <div class="register-form">
+      <h1>Regístrate</h1>
+      <form>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" />
+        </div>
+        <div>
+          <label for="lastname">Apellido</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Ingresa tu apellido" />
+        </div>
+        <div>
+          <label for="username">Nombre de usuario</label>
+          <input type="text" id="username" name="username" placeholder="Ingresa su nombre de usuario" />
+        </div>
+        <div>
+          <label for="gender">Género</label>
+          <select id="gender" name="gender">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example.email@gmail.com" />
+        </div>
+        <div>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Introduce al menos 8+ caracteres" />
+        </div>
+        <div>
+          <label for="confirm-password">Confirmar Contraseña</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Introduce al menos 8+ caracteres" />
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+      <p>¿Ya tienes una cuenta? <a href="/signin">Inicia sesión</a></p>
+    </div>
+  </main>
+</Layout>
